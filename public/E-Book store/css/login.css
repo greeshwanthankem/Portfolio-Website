@@ -117,7 +117,7 @@ margin-bottom: 26px;
 
 body {
   background-color: #328f81;
-  background-image: url('public/E-Book store/images/img_0.jpeg');
+  background-image: url("../images/img_0.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

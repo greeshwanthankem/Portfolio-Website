@@ -1,190 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Book Zone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.navbar{
-  display: flex;
-  background-color:rgb(13, 9, 139);
-  position: fixed;
-  top:0;
-  width: 100%;
-  font-size: 20px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
 
-.nav-right{
-  text-align: right;
-  float:right;
-}
+        .nav-right {
+            background-color: #000080;
+            padding: 1rem;
+            text-align: left;
+        }
 
-.nav-right li {
-    display: inline;
-    float: left;
-    padding-left: 15px;
-  }
+        .nav-right a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
 
-  .nav-right li a {
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    color:white;
-  }
+        .nav-right a:hover {
+            text-decoration: underline;
+        }
 
-  .nav-right  li ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+        .team-heading {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 2rem;
+        }
 
-  .nav-right li a:hover {
-    background-color: rgb(15, 175, 195);
-  }
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-  .nav-right .active {
-    background-color: #04AA6D;
-  }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
 
+        .card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
 
-html {
-  box-sizing: border-box;
-}
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+        .role {
+            color: #666;
+            margin-bottom: 10px;
+        }
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+        .quote {
+            font-style: italic;
+            margin: 15px 0;
+            min-height: 60px;
+        }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  width: 300px;
-  height: 400px;
-}
-.card:hover{
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-}
+        .email {
+            margin: 10px 0;
+        }
 
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #8f735f;
-  color: white;
-}
+        .contact-btn {
+            display: block;
+            background: black;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 15px;
+            width: 100%;
+            text-align: center;
+        }
 
-.container {
-  padding: 0 16px;
-}
+        .about-section {
+            background-color: #8B7355;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+        .about-section h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
 
-.title {
-  color: grey;
-}
+        .about-section p {
+            max-width: 800px;
+            margin: 10px auto;
+        }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+        @media (max-width: 900px) {
+            .row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-</style>
+        @media (max-width: 600px) {
+            .row {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-right {
+                text-align: center;
+            }
+            
+            .nav-right a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="Register.html">Create Account</a></li>
-        </div>
+    <nav class="nav-right">
+        <a href="/index.html">Home</a>
+        <a href="/products.html">Products</a>
+        <a href="/About.html">About</a>
+        <a href="/login.html">Login</a>
+        <a href="/Register.html">Create Account</a>
     </nav>
 
+    <h1 class="team-heading">Our Team</h1>
 
-<h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <center><img src="./images/p2.jfif" alt="Jane" style="width:100% height=300px"></center>
-      <div class="container">
-        <h2>Greeshwanth</h2>
-        <p class="title">CEO & Founder</p>
-        <p>“Be yourself; everyone else is already taken.”</p>
-        <p>greeshwanth@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
+    <div class="row">
+        <div class="card">
+            <img src="./images/p2.jfif" alt="Greeshwanth Profile">
+            <h2>Greeshwanth</h2>
+            <div class="role">CEO & Founder</div>
+            <div class="quote">"Be yourself; everyone else is already taken."</div>
+            <div class="email">greeshwanth@gmail.com</div>
+            <a href="#" class="contact-btn">Contact</a>
+        </div>
+
+        <div class="card">
+            <img src="./images/p3.jfif" alt="GVSR Profile">
+            <h2>GVSR</h2>
+            <div class="role">Art Director</div>
+            <div class="quote">"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."</div>
+            <div class="email">gvsr@gmail.com</div>
+            <a href="#" class="contact-btn">Contact</a>
+        </div>
+
+        <div class="card">
+            <img src="./images/p1.jfif" alt="Veronica Profile">
+            <h2>Veronica</h2>
+            <div class="role">Designer</div>
+            <div class="quote">"A room without books is like a body without a soul."</div>
+            <div class="email">veronica@gmail.com</div>
+            <a href="#" class="contact-btn">Contact</a>
+        </div>
     </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-        <center><img src="./images/p3.jfif" alt="Jane" style="width:100% height=300px"></center>
-      <div class="container">
-        <h2>GVSR</h2>
-        <p class="title">Art Director</p>
-        <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
-        <p>gvsr@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-        <center><img src="./images/p1.jfif" alt="Jane" style="width:100% height=300px"></center>
-      <div class="container">
-        <h2>Veronica</h2>
-        <p class="title">Designer</p>
-        <p>“A room without books is like a body without a soul.”</p>
-        <p>veronica@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="about-section">
-  <h1>About Us </h1>
-  <p>Book Zone provides easy interface to its customer for purchasing books online.</p>
-  <p>For any query leave a comment in the Home page comment section. You can also send us email and call us 
-      on Week days. 
-      <br>Thankyou for your patience and hope you had a great shopping here.
-  </p>
-</div>
-
-
+    <section class="about-section">
+        <h1>About Us</h1>
+        <p>Book Zone provides easy interface to its customers for purchasing books online.</p>
+        <p>For any query leave a comment in the Home page comment section. You can also send us email and call us on Week days.</p>
+        <p>Thank you for your patience and hope you had a great shopping here.</p>
+    </section>
 </body>
 </html>

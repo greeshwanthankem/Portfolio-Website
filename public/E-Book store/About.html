@@ -3,183 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - Book Zone</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        .nav-right {
-            background-color: #000080;
-            padding: 1rem;
-            text-align: left;
-        }
-
-        .nav-right a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        .nav-right a:hover {
-            text-decoration: underline;
-        }
-
-        .team-heading {
-            text-align: center;
-            margin: 2rem 0;
-            font-size: 2rem;
-        }
-
-        .row {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .card img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-
-        .card h2 {
-            margin: 10px 0;
-            font-size: 1.5rem;
-        }
-
-        .role {
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .quote {
-            font-style: italic;
-            margin: 15px 0;
-            min-height: 60px;
-        }
-
-        .email {
-            margin: 10px 0;
-        }
-
-        .contact-btn {
-            display: block;
-            background: black;
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            margin-top: 15px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .about-section {
-            background-color: #8B7355;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .about-section h1 {
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
-
-        .about-section p {
-            max-width: 800px;
-            margin: 10px auto;
-        }
-
-        @media (max-width: 900px) {
-            .row {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .row {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-right {
-                text-align: center;
-            }
-            
-            .nav-right a {
-                display: inline-block;
-                margin: 5px;
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <title>About Us - Book Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
-    <nav class="nav-right">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="About.html">About</a>
-        <a href="login.html">Login</a>
-        <a href="Register.html">Create Account</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Book Zone</a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="Register.html">Create Account</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <h1 class="team-heading">Our Team</h1>
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>Our Team</h1>
+            </div>
+        </section>
 
-    <div class="row">
-        <div class="card">
-            <img src="./images/p2.jfif" alt="Greeshwanth Profile">
-            <h2>Greeshwanth</h2>
-            <div class="role">CEO & Founder</div>
-            <div class="quote">"Be yourself; everyone else is already taken."</div>
-            <div class="email">greeshwanth@gmail.com</div>
-            <a href="#" class="contact-btn">Contact</a>
+        <section class="team">
+            <div class="container">
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="./images/p2.jfif" alt="Greeshwanth Profile">
+                        <h2>Greeshwanth</h2>
+                        <p class="role">CEO & Founde</p>
+                        <p class="quote">"Be yourself; everyone else is already taken."</p>
+                        <a href="mailto:greeshwanth@example.com" class="email">greeshwanth@example.com</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="./images/p3.jfif" alt="GVSR Profile">
+                        <h2>GVSR</h2>
+                        <p class="role">Art Director</p>
+                        <p class="quote">"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."</p>
+                        <a href="mailto:gvsr@example.com" class="email">gvsr@example.com</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="./images/p1.jfif" alt="Veronica Profile">
+                        <h2>Veronica</h2>
+                        <p class="role">Designer</p>
+                        <p class="quote">"A room without books is like a body without a soul."</p>
+                        <a href="mailto:veronica@example.com" class="email">veronica@example.com</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Book Zone provides an easy interface for customers to purchase books online.</p>
+                <p>For any query, leave a comment in the Home page comment section. You can also send us an email or call us on weekdays.</p>
+                <p>Thank you for your patience, and we hope you have a great shopping experience here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Author: <a href="http://github.com/greeshwanthankem">GREESHWANTH</a></p>
+            <p><a href="mailto:greeshwanthankem@gmail.com">greeshwanthankem@gmail.com</a></p>
         </div>
-
-        <div class="card">
-            <img src="./images/p3.jfif" alt="GVSR Profile">
-            <h2>GVSR</h2>
-            <div class="role">Art Director</div>
-            <div class="quote">"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."</div>
-            <div class="email">gvsr@gmail.com</div>
-            <a href="#" class="contact-btn">Contact</a>
-        </div>
-
-        <div class="card">
-            <img src="./images/p1.jfif" alt="Veronica Profile">
-            <h2>Veronica</h2>
-            <div class="role">Designer</div>
-            <div class="quote">"A room without books is like a body without a soul."</div>
-            <div class="email">veronica@gmail.com</div>
-            <a href="#" class="contact-btn">Contact</a>
-        </div>
-    </div>
-
-    <section class="about-section">
-        <h1>About Us</h1>
-        <p>Book Zone provides easy interface to its customers for purchasing books online.</p>
-        <p>For any query leave a comment in the Home page comment section. You can also send us email and call us on Week days.</p>
-        <p>Thank you for your patience and hope you had a great shopping here.</p>
-    </section>
+    </footer>
 </body>
 </html>

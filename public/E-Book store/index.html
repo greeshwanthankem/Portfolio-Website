@@ -2,164 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
     <title>Book Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="Register.html">Create Account</a></li>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Book Zone</a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="Register.html">Create Account</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <div class="section-1">
-        <div class="Section-1-text">
-            <center><h1>Welcome to Book Zone</h1>
-            <p>You can find out yours book here.</p>
-            <a href="./products.html" class="btn">Explore Here  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-           
-        </center>
-        </div>
-    </div>
-    <div class="section-2">
-        <h2>Featured Products</h2>
-        <!-- <a href="#"><img src="./images/img_2.jpg" alt=""> -->
-        <div class="gallery">
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_2.jpg" alt="img-1">
-                </a>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Book Zone</h1>
+                <p>You can find your books here.</p>
+                <a href="./products.html" class="btn">Explore Here <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_3.jpeg" alt="img-2">
-                </a>
-            </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_4.jpg" alt="img-3">
-                </a>
-            </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_5.jpg" alt="img-4">
-                </a>
-            </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_6.jpg" alt="img-5">
-                </a>
-            </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_7.jpg" alt="img-6">
-                </a>
-            </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_8.jpg" alt="img-7">
-                </a>
-            </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_9.jpg" alt="img-8">
-                </a>
-            </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_10.jpg" alt="img-9">
-                </a>
-            </div>
-            <div class="image-holder">
-                <a href="#">
-                    <img src="./images/img_11.jpg" alt="img-10">
-                </a>
-            </div>
+        </section>
 
-
-        </div>
-
-    </div>
-    <!-- <div class="section-3">
-        <h3>Products</h3>
-        <br>
-        <div class="view-card">
-            <div class="card">
-                <center><img src="./images/img_11.jpg" alt="Avatar"></center>
-                <div class="container">
-                  <center>
-                    <h4><b>John Doe</b></h4> 
-                    <p>Architect & Engineer</p>
-                  </center> 
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Repeat this block for each product -->
+                <div class="product-card">
+                    <img src="./images/Adv4.jfif" alt="Featured Book">
+                    <h3>Dragon Run</h3>
+                    <p>Patrick Matthews</p>
+                    <span class="price">₹299/-</span>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./images/img_11.jpg" alt="Avatar">
-                <div class="container">
-                  <h4><b>John Doe</b></h4> 
-                  <p>Architect & Engineer</p> 
+                <div class="product-card">
+                    <img src="./images/img_10.jpg" alt="Featured Book">
+                    <h3>The Girl in the Letter</h3>
+                    <p>Emily Gunnis</p>
+                    <span class="price">₹399/-</span>
                 </div>
+                <div class="product-card">
+                    <img src="./images/img_7.jpg" alt="Featured Book">
+                    <h3>Light We Cannot See</h3>
+                    <p>Anthony Doerr</p>
+                    <span class="price">₹499/-</span>
+                </div>
+                <div class="product-card">
+                    <img src="./images/img_5.jpg" alt="Featured Book">
+                    <h3>Our Darkest Night</h3>
+                    <p>Jennifer Robson</p>
+                    <span class="price">₹399/-</span>
+                </div>
+                <div class="product-card">
+                    <img src="./images/img_9.jpg" alt="Featured Book">
+                    <h3>House On The Lake</h3>
+                    <p>Holly Hill Mangin</p>
+                    <span class="price">₹399/-</span>
+                </div>
+                <!-- Add more product cards here -->
             </div>
+        </section>
 
-        </div>
+        <section class="featured-brands">
+            <h2>Featured Brands</h2>
+            <div class="brand-grid">
+                <!-- Repeat this block for each brand -->
+                <div class="brand-logo">
+                    <img src="./images/book_logo1.png" alt="Brand Logo">
+                </div>
+                <div class="brand-logo">
+                    <img src="./images/book_logo2.jpg" alt="Brand Logo">
+                </div>
+                <div class="brand-logo">
+                    <img src="./images/book_logo3.png" alt="Brand Logo">
+                </div>
+                <div class="brand-logo">
+                    <img src="./images/book_logo_4.png" alt="Brand Logo">
+                </div>
+                <div class="brand-logo">
+                    <img src="./images/book_logo_5.png" alt="Brand Logo">
+                </div>
+                <!-- Add more brand logos here -->
+            </div>
+        </section>
 
-    </div>  -->
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Leave us a message or suggestion:</p>
+            <form action="index.html" method="POST">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="india">India</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
 
-    <div class="section-4">
-        <h2>Featured Brands</h2>
-        <div class="brand">
-            <img src="./images/book_logo1.png" alt="">
-        </div>
-        <div class="brand">
-            <img src="./images/book_logo_6.png" alt="">
-        </div>
-        <div class="brand">
-            <img src="./images/book_logo3.png" alt="">
-        </div>
-        <div class="brand">
-            <img src="./images/book_logo_4.png" alt="">
-        </div>
-        <div class="brand">
-            <img src="./images/book_logo_5.png" alt="">
-        </div>
-    </div>
-
-    <!-- section-5 contact us  -->
-    <div class="section-5">
-        
-              <h2>Contact Us</h2>
-              <p>leave us a message or suggestion:</p>
-
-              <div class="column">
-                <form action="index.html">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="india">India</option>
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                  <input type="submit" value="Submit">
-                </form>
-              </div>
-
-    </div>
     <footer>
-        <p>Author:<a href="http://github.com/greeshwanthankem">GREESHWANTH</a> <br>
-            <a href="mailto:greeshwanthankem @gmai.com">greeshwanthankem @gmail.com</a></p>
+        <p>Author: <a href="http://github.com/greeshwanthankem">GREESHWANTH</a></p>
+        <p><a href="mailto:greeshwanthankem@gmail.com">greeshwanthankem@gmail.com</a></p>
     </footer>
 </body>
 </html>
